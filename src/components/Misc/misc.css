@@ -1,0 +1,113 @@
+.miscContainer{
+     width: 25%;
+     min-width: 280px;
+     height: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     color: var(--maroon);
+}
+
+.cartBox{
+     width: 20%;
+     height: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-color: #FEE5CA;
+     border-top: 1px solid var(--maroon);
+     border-left: 1px solid var(--maroon);
+     border-right: 3px solid var(--maroon);
+     border-bottom: 3px solid var(--maroon);
+}
+
+.cartIconBox,.cartNumber{
+     width: 50%;
+     height: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-right: 1px solid var(--maroon);
+}
+
+.cartNumber{
+     border-right: none;
+}
+
+.flavours{
+     width: 35%;
+     height: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-top: 1px solid var(--maroon);
+     border-left: 1px solid var(--maroon);
+     border-right: 3px solid var(--maroon);
+     border-bottom: 3px solid var(--maroon);
+     position: relative;
+     cursor: pointer;
+     overflow: hidden;
+     background-color: #FEE5CA;
+}
+
+.flavours:hover > .ftxt{
+     color: #FEE5CA;
+     z-index: 10000;
+}
+
+.veil{
+     width: 100%;
+     height: 100%;
+     position: absolute;
+     background-color: transparent;
+     top: 0%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+.flavours:hover> .veil{
+     animation:moveVeil 0.25s linear;
+     background-color: var(--maroon);
+}
+
+.menu{
+     width: 30%;
+     height: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 5px;
+     border-top: 1px solid var(--maroon);
+     border-left: 1px solid var(--maroon);
+     border-right: 3px solid var(--maroon);
+     border-bottom: 3px solid var(--maroon);
+     position: relative;
+     cursor: pointer;
+     overflow: hidden;
+     background-color: #FEE5CA;
+}
+
+.menu:hover > .ftxt{
+     color: #FEE5CA;
+     z-index: 10000;
+}
+
+.menu:hover> .veil{
+     animation:moveVeil 0.25s linear;
+     background-color: var(--maroon);
+}
+
+@keyframes moveVeil {
+     0%{
+          top:100%;
+          background-color: transparent;
+          color: transparent;
+     }
+     100%{
+          top:0%;
+          background-color: var(--maroon);
+          color: #FEE5CA;
+     }
+     
+}
